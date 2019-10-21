@@ -1,0 +1,6 @@
+10/21/2019 04:08:04 AM ------------------------   Initializing the domain verification routine br_verify_domain  ---------------------------------
+10/21/2019 04:08:04 AM about to process domain = http://mcguireandhester.com
+10/21/2019 04:08:04 AM About to call domain with parameters = http://mcguireandhester.com
+10/21/2019 04:08:04 AM About to call requests.head with domain = http://mcguireandhester.com
+10/21/2019 04:08:04 AM The requests.head returned code = 301, text = , headers = {'Server': 'nginx', 'Date': 'Sun, 20 Oct 2019 19:08:05 GMT', 'Content-Type': 'text/html; charset=UTF-8', 'Content-Length': '0', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=20', 'X-Redirect-By': 'WordPress', 'Location': 'https://www.mcguireandhester.com/', 'X-Cacheable': 'non200', 'Cache-Control': 'max-age=600, must-revalidate', 'X-Cache': 'HIT: 3', 'X-Pass-Why': '', 'X-Cache-Group': 'normal'}
+10/21/2019 04:08:04 AM The request domain header validated the website. 
