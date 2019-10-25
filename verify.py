@@ -57,13 +57,12 @@ def br_verify_domain(domain, api_key):
             try:
                 logger.info("About to call the requests.get with domain = {}".format(domain))
                 result = requests.get(domain, headers = {'User-Agent': 'Mozilla/5.0'})
-                request2 = requests.get(domain)
-                logger.info("The requests.get call returned - {}" .format(request2))
-                if request2.status_code == 200:
+                logger.info("The requests.get call returned - {}" .format(result))
+                if result.status_code == 200:
                     logger.info('The second web site verification says the Web site exists')
-                    return False
+                    return True
                 else:
-                    logger.info('The second web site verification says the Web site Does NOT exist Too - {}'.format(request2))
+                    logger.info('The second web site verification says the Web site Does NOT exist Too - {}'.format(result))
                     return False
             except Exception as e:
                 logger.exception("The second verify domain failed... - {}" .format(e))
@@ -73,3 +72,4 @@ def br_verify_domain(domain, api_key):
         return False
 
 br_verify_domain('http://mcguireandhester.com', '1')
+br_verify_domain('http://www.corporatesigns.com', '1')
